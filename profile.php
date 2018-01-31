@@ -214,7 +214,7 @@
                     <p><span class="glyphicon glyphicon-gift"></span> <span class="title">Date of birth:</span> 14.02.1989</p>                                
                 </div>  -->                             
             </div>
-            <div class="clearfix" style="margin-top:-20px; background: #fff; height: 500px; border:1px solid #cccccc;">
+            <div class="clearfix" style="margin-top:-20px; background: #fff; min-height: 500px; border:1px solid #cccccc;">
               <nav class="navbar navbar-inverse" style="border-radius:0px;">
                 <div class="container-fluid">
                   <!-- Brand and toggle get grouped for better mobile display -->
@@ -232,13 +232,13 @@
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     
                     <ul class="nav navbar-nav navbar-right">
-                      <li class="active li-frofile-menu" id="overview"><a href="#" class="profile-menu" data-menu="overview">Overview</a></li>
+                      <li class="active li-frofile-menu" id="overview"><a href="#" class="profile-menu" data-menu="overview">Profile</a></li>
                       <li class="li-frofile-menu" id="project"><a href="#" class="profile-menu" data-menu="project">Project</a></li>
                       <li class="li-frofile-menu" id="bid"><a href="#" class="profile-menu" data-menu="bid">Bid</a></li>
                       <li class="li-frofile-menu" id="about"><a href="#" class="profile-menu" data-menu="about">About</a></li>
-                      <li class="li-frofile-menu" id="image"><a href="#" class="profile-menu" data-menu="image">Image</a></li>
-                      <li class="li-frofile-menu" id="message"><a href="#" class="profile-menu" data-menu="message">Message</a></li>
-                      <li class="li-frofile-menu" id="subscribe"><a href="#" class="profile-menu" data-menu="subscribe">Subscribe</a></li>
+                      <!-- <li class="li-frofile-menu" id="image"><a href="#" class="profile-menu" data-menu="image">Image</a></li> -->
+                      <!-- <li class="li-frofile-menu" id="message"><a href="#" class="profile-menu" data-menu="message">Message</a></li> -->
+                      <!-- <li class="li-frofile-menu" id="subscribe"><a href="#" class="profile-menu" data-menu="subscribe">Subscribe</a></li> -->
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -320,6 +320,18 @@
             }
         });
 
+      });
+
+var xH
+      $('.dhiraj').hover(
+      function () {
+          xH = $(this).children("img").css("height");
+          xH = parseInt(xH);
+          xH = xH - 50;
+          xH = "-" + xH + "px";
+          $(this).children("img").css("top", xH);
+      }, function () {
+          $(this).children("img").css("top", "0px");
       });
 
     })
